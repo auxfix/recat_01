@@ -1,0 +1,23 @@
+.red {
+  background: #900;
+  grid-area: red;
+}
+
+.green {
+  background: #090;
+  grid-area: green;
+}
+
+.blue {
+  background: #009;
+  grid-area: blue;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 10rem);
+  grid-template-areas: 
+    "red blue"
+    "green blue";
+}
